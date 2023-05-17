@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Магазин</h1>
+    <button id="theme-toggle">Светлая тема</button>
+  </header>
+
+  <nav id="sticky-menu">
+    <ul>
+      <li><a href="#category1">Категория 1</a></li>
+      <li><a href="#category2">Категория 2</a></li>
+      <li><a href="#category3">Категория 3</a></li>
+    </ul>
+  </nav>
+
+  <div id="main-content">
+    <section id="category1">
+      <h2>Категория 1</h2>
+      <div class="card">
+        <img src="product1.jpg" alt="Товар 1">
+        <p>Товар 1</p>
+        <p class="date-added">Добавлено: <span class="formatted-date"></span></p>
+        <button class="buy-button">Купить</button>
+      </div>
+      <!-- Другие карточки товаров -->
+    </section>
+
+    <section id="category2">
+      <h2>Категория 2</h2>
+      <div class="card">
+        <img src="product2.jpg" alt="Товар 2">
+        <p>Товар 2</p>
+        <p class="date-added">Добавлено: <span class="formatted-date"></span></p>
+        <button class="buy-button">Купить</button>
+      </div>
+      <!-- Другие карточки товаров -->
+    </section>
+
+    <section id="category3">
+      <h2>Категория 3</h2>
+      <div class="card">
+        <img src="product3.jpg" alt="Товар 3">
+        <p>Товар 3</p>
+        <p class="date-added">Добавлено: <span class="formatted-date"></span></p>
+        <button class="buy-button">Купить</button>
+      </div>
+      <!-- Другие карточки товаров -->
+    </section>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="#category1">Категория 1</a></li>
+      <li><a href="#category2">Категория 2</a></li>
+      <li><a href="#category3">Категория 3</a></li>
+    </ul>
+  </footer>
+
+  <button id="scroll-to-top" class="hidden">Наверх</button>
+
+  <div id="overlay">
+    <div id="popup">
+      <h2>Добавить товар в корзину</h2>
+      <form id="purchase-form">
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" required>
+        <label for="color">Цвет:</label>
+        <div id="color-options">
+          <label><input type="radio" name="color" value="red"> Красный</label>
+          <label><input type="radio" name="color" value="blue"> Синий</label>
+          <label><input type="radio" name="color" value="green"> Зеленый</label>
+        </div>
+        <label for="comment">Комментарий:</label>
+        <textarea id="comment" maxlength="2000"></textarea>
+        <div id="buttons">
+          <input type="submit" value="Купить">
+          <button id="close-button" type="button">Закрыть</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
